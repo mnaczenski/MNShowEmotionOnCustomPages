@@ -2,7 +2,7 @@
 
 
 /**
- * Disable Theme Sections
+ * MNShowEmotionOnCustomPages
  * @author Moritz Naczenski
  */
 
