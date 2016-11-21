@@ -36,14 +36,14 @@ use Shopware\Components\Plugin\Context\InstallContext;
 
 		$this -> createConfig();
 
-        //register service
-        $service = $this->get('shopware_attribute.crud_service');
+        	//register service
+        	$service = $this->get('shopware_attribute.crud_service');
 		//create blog attribute
-        $service->update('s_blog_attributes', 'emotionidforblog', 'single_selection', [
-            'label' => 'Einkaufswelt für Blogbeitrag',
-            'displayInBackend' => true,
-            'entity' => 'Shopware\Models\Emotion\Emotion'
-        ]);
+        	$service->update('s_blog_attributes', 'emotionidforblog', 'single_selection', [
+            		'label' => 'Einkaufswelt für Blogbeitrag',
+            		'displayInBackend' => true,
+            		'entity' => 'Shopware\Models\Emotion\Emotion'
+       		 ]);
 		//create attribute for shop-pages
 		$service->update('s_cms_static_attributes', 'emotionidforshoppages', 'single_selection', [
 			'label' => 'Einkaufswelt für Shopseiten',
